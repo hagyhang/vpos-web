@@ -618,10 +618,7 @@ form.dark-theme input::placeholder {
   font-size: 14px; }
 
 .status-text {
-  text-align: center; }
-  @media (max-width: 768px) {
-    .status-text {
-      text-align: right; } }
+  text-align: right; }
 
 .status-icon {
   text-align: center; }
@@ -691,6 +688,17 @@ form.dark-theme input::placeholder {
 
 .blue-text {
   color: #067EFE; }
+
+.product-img {
+  width: 40px;
+  height: 40px; }
+
+.table-responsive th {
+  vertical-align: center;
+  text-align: center; }
+.table-responsive td {
+  vertical-align: center;
+  text-align: center; }
 
 /*End Thanh Options*/
 @media (max-width: 1200px) {
