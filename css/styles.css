@@ -673,6 +673,19 @@ form.dark-theme input::placeholder {
 .input-group.date.form_date .blue-icon {
   color: #067EFE; }
 
+.middle-vertical-align {
+  vertical-align: middle; }
+
+/*Product-add style*/
+.description-text {
+  min-height: 90px; }
+
+.product-add-img {
+  height: 150px;
+  width: 198px; }
+
+/*End Product-add style*/
+/*Chart style*/
 .chart {
   height: 300px;
   margin: 0 auto; }
@@ -686,6 +699,8 @@ form.dark-theme input::placeholder {
     .chart {
       max-width: 600px; } }
 
+/*End Chart style*/
+/*Table style*/
 .blue-text {
   color: #067EFE; }
 
@@ -693,13 +708,14 @@ form.dark-theme input::placeholder {
   width: 40px;
   height: 40px; }
 
-.table-responsive th {
-  vertical-align: center;
+.table-responsive thead tr th {
+  vertical-align: middle;
   text-align: center; }
-.table-responsive td {
-  vertical-align: center;
+.table-responsive tbody tr td {
+  vertical-align: middle;
   text-align: center; }
 
+/*End Table style*/
 /*End Thanh Options*/
 @media (max-width: 1200px) {
   .container {

@@ -440,6 +440,20 @@ form.dark-theme {
 		color: #067EFE;
 	}
 }
+.middle-vertical-align{
+	vertical-align: middle;
+}
+/*Product-add style*/
+.description-text{
+	min-height: 90px;
+}
+.product-add-img{
+	height: 150px;
+	width: 198px;
+}
+/*End Product-add style*/
+
+/*Chart style*/
 .chart{
 	@media (max-width:1400px) {
 		max-width: 1000px;
@@ -453,6 +467,9 @@ form.dark-theme {
 	height: 300px;
 	margin: 0 auto
 }
+/*End Chart style*/
+
+/*Table style*/
 .blue-text{
 	color: #067EFE;
 }
@@ -461,14 +478,24 @@ form.dark-theme {
 	height: 40px;
 }
 .table-responsive{
-	th{
-		vertical-align: center;
-		text-align: center;
-	}
-	td{
-		vertical-align: center;
-		text-align: center;
+	thead{
+		tr{
+			th{
+				vertical-align: middle;
+				text-align: center;
+			}
+		}
+	}	
+	tbody{
+		tr{
+			td{
+				vertical-align: middle;
+				text-align: center;
+			}
+		}
 	}
 }
+/*End Table style*/
+
 /*End Thanh Options*/
 @import "_responsive.scss";
