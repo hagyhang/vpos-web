@@ -221,7 +221,10 @@ label.title {
 .btn-white-border,
 .btn-blue-border,
 .btn-red-border,
-.btn-blue {
+.btn-blue,
+.btn-green,
+.btn-red,
+.btn-black {
 	border:none!important;
 	letter-spacing: 0.5px;
 	text-transform: uppercase!important;
@@ -278,6 +281,36 @@ label.title {
 	color:white!important;
 	&:hover {
 		background-color:#0477BC!important;
+		color:white!important;
+		transition: background-color 0.3s;
+	}
+}
+
+.btn-green, a.btn-green {
+	background-color: #5DB100!important;
+	color:white!important;
+	&:hover {
+		background-color:#4F9600!important;
+		color:white!important;
+		transition: background-color 0.3s;
+	}
+}
+
+.btn-red, a.btn-red {
+	background-color: #D0021B!important;
+	color:white!important;
+	&:hover {
+		background-color:#A30014!important;
+		color:white!important;
+		transition: background-color 0.3s;
+	}
+}
+
+.btn-black, a.btn-black {
+	background-color: #000000!important;
+	color:white!important;
+	&:hover {
+		background-color:#000000!important;
 		color:white!important;
 		transition: background-color 0.3s;
 	}

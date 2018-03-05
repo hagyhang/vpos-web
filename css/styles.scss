@@ -385,7 +385,6 @@ form.dark-theme {
 }
 
 /*Thanh Options*/
-
 .num-status{
 	font-size: 48px;
 	width: auto;
@@ -456,7 +455,7 @@ form.dark-theme {
 /*Chart style*/
 .chart{
 	@media (max-width:1400px) {
-		max-width: 1000px;
+		max-width: 940px; /*1000px in window*/
 	}
 	@media (max-width:1200px) {
 		max-width: 800px;
@@ -496,6 +495,37 @@ form.dark-theme {
 	}
 }
 /*End Table style*/
+
+/*promotion style*/
+.place_holder{
+    color: gray;
+}
+.promotion_dateimtepicker{
+	color: #000000;
+	font-size: 18px;
+	color: #000000;
+}
+.mt27{
+	margin-top: 27px;
+}
+.x-btn, a.x-btn{
+	padding: 5px 0px 0px 0px;
+	min-width: 0px;
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+}
+.pull-left{
+	float: left;
+}
+.back-arrow{
+	color: #067EFE;
+	margin-right: 15px;
+}
+.color-red{
+	color: #D0021B;
+}
+/*End promotion style*/
 
 /*End Thanh Options*/
 @import "_responsive.scss";

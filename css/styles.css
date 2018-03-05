@@ -175,7 +175,10 @@ label.title {
 .btn-white-border,
 .btn-blue-border,
 .btn-red-border,
-.btn-blue {
+.btn-blue,
+.btn-green,
+.btn-red,
+.btn-black {
   border: none !important;
   letter-spacing: 0.5px;
   text-transform: uppercase !important;
@@ -222,6 +225,30 @@ label.title {
   color: white !important; }
   .btn-blue:hover, a.btn-blue:hover {
     background-color: #0477BC !important;
+    color: white !important;
+    transition: background-color 0.3s; }
+
+.btn-green, a.btn-green {
+  background-color: #5DB100 !important;
+  color: white !important; }
+  .btn-green:hover, a.btn-green:hover {
+    background-color: #4F9600 !important;
+    color: white !important;
+    transition: background-color 0.3s; }
+
+.btn-red, a.btn-red {
+  background-color: #D0021B !important;
+  color: white !important; }
+  .btn-red:hover, a.btn-red:hover {
+    background-color: #A30014 !important;
+    color: white !important;
+    transition: background-color 0.3s; }
+
+.btn-black, a.btn-black {
+  background-color: #000000 !important;
+  color: white !important; }
+  .btn-black:hover, a.btn-black:hover {
+    background-color: #000000 !important;
     color: white !important;
     transition: background-color 0.3s; }
 
@@ -691,7 +718,8 @@ form.dark-theme input::placeholder {
   margin: 0 auto; }
   @media (max-width: 1400px) {
     .chart {
-      max-width: 1000px; } }
+      max-width: 940px;
+      /*1000px in window*/ } }
   @media (max-width: 1200px) {
     .chart {
       max-width: 800px; } }
@@ -716,6 +744,36 @@ form.dark-theme input::placeholder {
   text-align: center; }
 
 /*End Table style*/
+/*promotion style*/
+.place_holder {
+  color: gray; }
+
+.promotion_dateimtepicker {
+  color: #000000;
+  font-size: 18px;
+  color: #000000; }
+
+.mt27 {
+  margin-top: 27px; }
+
+.x-btn, a.x-btn {
+  padding: 5px 0px 0px 0px;
+  min-width: 0px;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px; }
+
+.pull-left {
+  float: left; }
+
+.back-arrow {
+  color: #067EFE;
+  margin-right: 15px; }
+
+.color-red {
+  color: #D0021B; }
+
+/*End promotion style*/
 /*End Thanh Options*/
 @media (max-width: 1200px) {
   .container {
