@@ -654,6 +654,9 @@ form.dark-theme input::placeholder {
       margin-top: 10px; } }
 
 /*Thanh Options*/
+.input-group-addon {
+  font-size: 12px; }
+
 .form-control {
   height: 36px; }
 
