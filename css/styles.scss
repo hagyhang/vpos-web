@@ -385,6 +385,9 @@ form.dark-theme {
 }
 
 /*Thanh Options*/
+.form-control{
+	height: 36px;
+}
 .num-status{
 	font-size: 48px;
 	width: auto;
@@ -526,6 +529,7 @@ form.dark-theme {
 	color: #D0021B;
 }
 /*End promotion style*/
+
 
 /*End Thanh Options*/
 @import "_responsive.scss";

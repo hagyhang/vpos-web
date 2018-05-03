@@ -1,6 +1,8 @@
 /*-- options datetimepicker --*/
 $(".form_date").datetimepicker({
     //language:  'fr',
+    // format: 'yyyy-mm-dd hh:ii',
+    format: 'dd-mm-yyyy',
     weekStart: 1,
     todayBtn:  1,
     autoclose: 1,

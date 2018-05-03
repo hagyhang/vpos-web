@@ -183,9 +183,9 @@ label.title {
   letter-spacing: 0.5px;
   text-transform: uppercase !important;
   font-weight: bold !important;
-  min-width: 120px;
+  min-width: 100px;
   border-radius: 3px;
-  padding: 10px 25px;
+  padding: 7px 14px;
   transition: background-color 0.3s; }
 
 .btn-white, a.btn-white {
@@ -654,6 +654,9 @@ form.dark-theme input::placeholder {
       margin-top: 10px; } }
 
 /*Thanh Options*/
+.form-control {
+  height: 36px; }
+
 .num-status {
   font-size: 48px;
   width: auto;
