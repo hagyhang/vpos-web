@@ -698,9 +698,6 @@ form.dark-theme input::placeholder {
 .panel-detail.no-line {
   border-bottom: none; }
 
-.mt42 {
-  margin-top: 42px; }
-
 .input-group.date.form_date .input-group-addon {
   padding: 0px; }
 .input-group.date.form_date .blue-icon {
@@ -709,32 +706,6 @@ form.dark-theme input::placeholder {
 .middle-vertical-align {
   vertical-align: middle; }
 
-/*Product-add style*/
-.description-text {
-  min-height: 90px; }
-
-.product-add-img {
-  height: 150px;
-  width: 198px; }
-
-/*End Product-add style*/
-/*Chart style*/
-.chart {
-  height: 300px;
-  margin: 0 auto; }
-  @media (max-width: 1400px) {
-    .chart {
-      max-width: 940px;
-      /*1000px in window*/ } }
-  @media (max-width: 1200px) {
-    .chart {
-      max-width: 800px; } }
-  @media (max-width: 768px) {
-    .chart {
-      max-width: 600px; } }
-
-/*End Chart style*/
-/*Table style*/
 .blue-text {
   color: #067EFE; }
 
@@ -749,7 +720,31 @@ form.dark-theme input::placeholder {
   vertical-align: middle;
   text-align: center; }
 
-/*End Table style*/
+/*Product-add style*/
+.description-text {
+  min-height: 90px; }
+
+.product-add-img {
+  height: 150px;
+  width: 198px; }
+
+/*End Product-add style*/
+/*Dashboard style*/
+.chart {
+  height: 300px;
+  margin: 0 auto; }
+  @media (max-width: 1400px) {
+    .chart {
+      max-width: 940px;
+      /*1000px in window*/ } }
+  @media (max-width: 1200px) {
+    .chart {
+      max-width: 800px; } }
+  @media (max-width: 768px) {
+    .chart {
+      max-width: 600px; } }
+
+/*End Dashboard style*/
 /*promotion style*/
 .place_holder {
   color: gray; }
