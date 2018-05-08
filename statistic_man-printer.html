@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/simple-sidebar.css">
+<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+
+
+<style>body,html {background-color:#f5f5f5;}</style>
+
+<div id="wrapper"> 
+  
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar logo"> <a href="#"><img src="images/logo_sidebar.svg" alt=""></a> </li>
+            <li class="parent"><a href="#submenu1" data-toggle="collapse"><i class="zmdi zmdi-home zmdi-hc-lg"></i>TỔNG QUAN</a></li>
+            <div class="collapse sub-nav" id="submenu1">
+                <li><a href="overview-general_report.html"><i class="zmdi zmdi-circle"></i>Báo cáo chung</a></li>
+                <li><a href="overview-area_report.html"><i class="zmdi zmdi-circle"></i>Báo cáo theo khu vực </a></li>
+            </div>
+            <li class="parent"><a href="#submenu2" data-toggle="collapse"><i class="zmdi zmdi-smartphone zmdi-hc-lg"></i>QUẢN LÝ HÀNG HÓA</a></li>
+            <div class="collapse sub-nav" id="submenu2">
+                <li><a href="goods-category.html"><i class="zmdi zmdi-circle"></i>Danh mục</a></li>
+                <li><a href="goods-product.html"><i class="zmdi zmdi-circle"></i>Sản phảm</a></li>
+                <li><a href="goods-promotion.html"><i class="zmdi zmdi-circle"></i>Khuyến mãi</a></li>
+                <li><a href="goods-option.html"><i class="zmdi zmdi-circle"></i>Tùy chọn cho món ăn</a></li>
+            </div>
+            <li class="parent"><a href="#submenu3" data-toggle="collapse"><i class="zmdi zmdi-settings zmdi-hc-lg"></i>GIAO DỊCH</a></li>
+            <div class="collapse sub-nav" id="submenu3">
+                <li><a href="exchange-log.html"><i class="zmdi zmdi-circle"></i>Nhật ký giao dịch</a></li>
+                <li><a href="exchange-check_bill.html"><i class="zmdi zmdi-circle"></i>Kiểm tra hóa đơn</a></li>
+                <li><a href="exchange-cross_checking.html"><i class="zmdi zmdi-circle"></i>Đối soát</a></li>
+                <li><a href="exchange-refund.html"><i class="zmdi zmdi-circle"></i>Hoàn tiền</a></li>
+            </div>
+            <li class="parent"><a href="#submenu4" data-toggle="collapse"><i class="zmdi zmdi-chart zmdi-hc-lg"></i>THỐNG KÊ</a></li>
+            <div class="collapse sub-nav" id="submenu4">
+                <li><a href="statistic-by_day.html"><i class="zmdi zmdi-circle"></i>Thống kê theo ngày</a></li>
+                <li><a href="statistic-by_month.html"><i class="zmdi zmdi-circle"></i>Thống kê theo tháng</a></li>
+                <li><a href="statistic-by_food.html"><i class="zmdi zmdi-circle"></i>Thống kê theo món ăn</a></li>
+            </div>
+
+            <li class="parent"><a href="#submenu5" data-toggle="collapse"><i class="zmdi zmdi-label zmdi-hc-lg"></i>QUẢN LÝ THỐNG KÊ</a></li>
+            <div class="collapse sub-nav in" id="submenu5">
+                <li><a href="statistic_man-table.html"><i class="zmdi zmdi-circle"></i>Quản lý bàn</a></li>
+                <li><a href="statistic_man-area.html"><i class="zmdi zmdi-circle"></i>Quản lý khu vực</a></li>
+                <li class="active"><a href="statistic_man-printer.html"><i class="zmdi zmdi-circle"></i>Quản lý máy in</a></li>
+                <li><a href="statistic_man-employee.html"><i class="zmdi zmdi-circle"></i>Quản lý nhân viên</a></li>
+                <li><a href="statistic_man-decentralization.html"><i class="zmdi zmdi-circle"></i>Phân quyền</a></li>
+                <li><a href="statistic_man-processing_area.html"><i class="zmdi zmdi-circle"></i>Quản lý khu vực chế biến</a></li>
+            </div>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper --> 
+  
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div id="admin-header">
+      <div class="row">
+        <div class="col-xs-3"> <a href="#menu-toggle" id="menu-toggle"><i class="zmdi zmdi-menu zmdi-hc-lg"></i></a> </div>
+        <div class="col-xs-6 text-center"> <a href="#" class="hidden-md hidden-lg logo"><img src="images/logo_sidebar.svg" alt=""></a> </div>
+        <div class="col-xs-3 text-right">
+          <div class="dropdown"> <a href="#" class="dropdown-toggle mr15" id="acc-dropdown" data-toggle="dropdown"> <i class="zmdi zmdi-account zmdi-hc-lg"></i> <span class="hidden-sm hidden-xs ml5">gbcdemo</span> <span class="caret"></span> </a>
+            <ul class="dropdown-menu mt5 mr5 dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#"><i class="zmdi zmdi-key mr5"></i>Key</a></li>
+              <li><a class="dropdown-item" href="#"><i class="zmdi zmdi-power mr5"></i>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <h1 class="page-title">Quản lý máy in</h1>      
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="search-panel row mt15 mb15 ">
+              <div class="col-sm-4">
+                <div class="input-place">
+                  <label>Hiển thị:</label>        
+                  <div class="row">
+                      <div class="col-xs-7">
+                        <div class="customSelect">
+                          <select name="" id="" class="form-control">
+                            <option value="10">10</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xs-5 mt5 pl0"><span>Dòng</span></div>
+                    </div>      
+                 </div>
+              </div>
+          </div>
+              
+          <div class="clearfix"></div>
+          <div class="row">
+            <div class="col-xs-12 mb15">
+              <a href="#popupUpdatePrinter" data-toggle="modal" class="btn btn-blue-border mr15">
+                <span class=" zmdi zmdi-plus"></span>
+                <span>Thêm</span>
+               </a>
+              <a href="#" class="btn btn-red-border">
+                <span class=" zmdi zmdi-delete"></span>
+                <span>Xóa</span>
+               </a>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-hover table-striped text-center">
+            <thead>
+              <tr>
+                <th><input type="checkbox" name=""></th>
+                <th>STT</th>
+                <th >Tên máy in</th>
+                <th >ID</th>
+                <th>Loại máy in</th>
+                <th >Trạng thái</th>
+                <th >Chức năng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name=""></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="action text-center">
+                  <a href="#popupUpdatePrinter" data-toggle="modal" class="touch-link"><i class="zmdi zmdi-edit zmdi-hc-lg"></i></a>
+                  <a href="#" data-toggle="modal" class="touch-link"><i class="zmdi zmdi-delete zmdi-hc-lg text-danger"></i></a>
+                </td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+          
+          <div class="row mb20">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-12 mb15">
+                  <a href="#popupUpdatePrinter" data-toggle="modal" class="btn btn-blue-border mr15">
+                    <span class=" zmdi zmdi-plus"></span>
+                    <span>Thêm</span>
+                   </a>
+                  <a href="#" class="btn btn-red-border">
+                    <span class=" zmdi zmdi-delete"></span>
+                    <span>Xóa</span>
+                   </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 text-right text-center-xs">
+              <div class="visible-xs mt30"></div>
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="First">
+                  <span class="zmdi zmdi-skip-previous"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Previous"><strong>PREV</strong></a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li>
+                  <a href="#" aria-label="Next"><strong>NEXT</strong></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Last">
+                  <span class="zmdi zmdi-skip-next"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>     
+        </div>
+      </div>        
+    </div>
+  </div>
+  <!-- /#page-content-wrapper --> 
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="popupUpdatePrinter">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                THÔNG TIN MÁY IN</div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 mb20">
+                        <label class="title">TÊN MÁY IN</label>
+                        <input type="text" id="" class="form-control input-lg" value="">
+                    </div>
+                    <div class="col-sm-6 mb20">
+                        <label class="title">LOẠI MÁY IN</label>
+                        <div class="customSelect lg">
+                            <select name="" id="" class="form-control input-lg">
+                                <option value="">Máy in laser</option>
+                                <option value="">Máy in loại 2</option>
+                                <option value="">Không xác định</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb20">
+                        <label class="title">TRẠNG THÁI</label>
+                        <div class="customSelect lg">
+                            <select name="" id="" class="form-control input-lg">
+                                <option value="">Đang hoạt động</option>
+                                <option value="">Ngưng hoạt động</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-6">
+                        <a type="button" class="btn btn-info w-100" data-dismiss="modal">Làm lại</a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a type="button" class="btn btn-blue w-100">Lưu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+</div>
+<!-- /#wrapper --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/simple-sidebar.js"></script> 
+<script src="js/default.js"></script> 
+<script>
+
+</script>
+</body>
+</html>

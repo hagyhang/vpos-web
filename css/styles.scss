@@ -278,8 +278,9 @@ form.dark-theme {
 		}
 		
 		&.logo a {
-			 padding:15px 20px;
+			padding:15px 20px;
 			background-color: transparent!important;
+			text-align: center;
 		}
 		
 		&.parent {
@@ -298,7 +299,7 @@ form.dark-theme {
 	.sub-nav li {
 		a {
 			padding:10px 20px;
-			padding-left:60px;
+			padding-left:40px;
 			font-size:80%;
 			i.zmdi {
 				margin-right: 5px;
@@ -390,6 +391,12 @@ form.dark-theme {
 }
 .form-control{
 	height: 36px;
+}
+.form-control.input-lg{
+	height: 46px;
+}
+textarea.form-control.input-lg{
+	height: auto;
 }
 .num-status{
 	font-size: 48px;
@@ -502,13 +509,9 @@ form.dark-theme {
 .place_holder{
     color: gray;
 }
-.promotion_dateimtepicker{
+.datetimepicker_icon{
 	color: #000000;
 	font-size: 18px;
-	color: #000000;
-}
-.mt27{
-	margin-top: 27px;
 }
 .x-btn, a.x-btn{
 	padding: 5px 0px 0px 0px;

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/simple-sidebar.css">
+<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
+</head>
+<body>
+<style>
+body,html {background-color:#f5f5f5;}
+</style>
+
+<div id="wrapper"> 
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar logo"> <a href="#"><img src="images/logo_sidebar.svg" alt=""></a> </li>
+            <li class="parent"><a href="#submenu1" data-toggle="collapse"><i class="zmdi zmdi-home zmdi-hc-lg"></i>TỔNG QUAN</a></li>
+            <div class="collapse sub-nav in" id="submenu1">
+                <li class="active"><a href="overview-general_report.html"><i class="zmdi zmdi-circle"></i>Báo cáo chung</a></li>
+                <li><a href="overview-area_report.html"><i class="zmdi zmdi-circle"></i>Báo cáo theo khu vực </a></li>
+            </div>
+            <li class="parent"><a href="#submenu2" data-toggle="collapse"><i class="zmdi zmdi-smartphone zmdi-hc-lg"></i>QUẢN LÝ HÀNG HÓA</a></li>
+            <div class="collapse sub-nav" id="submenu2">
+                <li><a href="goods-category.html"><i class="zmdi zmdi-circle"></i>Danh mục</a></li>
+                <li><a href="goods-product.html"><i class="zmdi zmdi-circle"></i>Sản phảm</a></li>
+                <li><a href="goods-promotion.html"><i class="zmdi zmdi-circle"></i>Khuyến mãi</a></li>
+                <li><a href="goods-option.html"><i class="zmdi zmdi-circle"></i>Tùy chọn cho món ăn</a></li>
+            </div>
+            <li class="parent"><a href="#submenu3" data-toggle="collapse"><i class="zmdi zmdi-settings zmdi-hc-lg"></i>GIAO DỊCH</a></li>
+            <div class="collapse sub-nav" id="submenu3">
+                <li><a href="exchange-log.html"><i class="zmdi zmdi-circle"></i>Nhật ký giao dịch</a></li>
+                <li><a href="exchange-check_bill.html"><i class="zmdi zmdi-circle"></i>Kiểm tra hóa đơn</a></li>
+                <li><a href="exchange-cross_checking.html"><i class="zmdi zmdi-circle"></i>Đối soát</a></li>
+                <li><a href="exchange-refund.html"><i class="zmdi zmdi-circle"></i>Hoàn tiền</a></li>
+            </div>
+            <li class="parent"><a href="#submenu4" data-toggle="collapse"><i class="zmdi zmdi-chart zmdi-hc-lg"></i>THỐNG KÊ</a></li>
+            <div class="collapse sub-nav" id="submenu4">
+                <li><a href="statistic-by_day.html"><i class="zmdi zmdi-circle"></i>Thống kê theo ngày</a></li>
+                <li><a href="statistic-by_month.html"><i class="zmdi zmdi-circle"></i>Thống kê theo tháng</a></li>
+                <li><a href="statistic-by_food.html"><i class="zmdi zmdi-circle"></i>Thống kê theo món ăn</a></li>
+            </div>
+
+            <li class="parent"><a href="#submenu5" data-toggle="collapse"><i class="zmdi zmdi-label zmdi-hc-lg"></i>QUẢN LÝ THỐNG KÊ</a></li>
+            <div class="collapse sub-nav" id="submenu5">
+                <li><a href="statistic_man-table.html"><i class="zmdi zmdi-circle"></i>Quản lý bàn</a></li>
+                <li><a href="statistic_man-area.html"><i class="zmdi zmdi-circle"></i>Quản lý khu vực</a></li>
+                <li><a href="statistic_man-printer.html"><i class="zmdi zmdi-circle"></i>Quản lý máy in</a></li>
+                <li><a href="statistic_man-employee.html"><i class="zmdi zmdi-circle"></i>Quản lý nhân viên</a></li>
+                <li><a href="statistic_man-decentralization.html"><i class="zmdi zmdi-circle"></i>Phân quyền</a></li>
+                <li><a href="statistic_man-processing_area.html"><i class="zmdi zmdi-circle"></i>Quản lý khu vực chế biến</a></li>
+            </div>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper --> 
+    
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div id="admin-header">
+            <div class="row">
+                <div class="col-xs-3"> <a href="#menu-toggle" id="menu-toggle"><i class="zmdi zmdi-menu zmdi-hc-lg"></i></a> </div>
+                <div class="col-xs-6 text-center"> <a href="#" class="logo"><img src="images/logo_sidebar.svg" alt=""></a> </div>
+                <div class="col-xs-3 text-right">
+                    <div class="dropdown"> <a href="#" class="dropdown-toggle mr15" id="acc-dropdown" data-toggle="dropdown"> <i class="zmdi zmdi-account zmdi-hc-lg"></i> <span class="hidden-sm hidden-xs ml5">gbcdemo</span> <span class="caret"></span> </a>
+                        <ul class="dropdown-menu mt5 mr5 dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#popupMyKey" data-toggle="modal"><i class="zmdi zmdi-key mr5"></i>Key</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="zmdi zmdi-power mr5"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 col-sm-9 col-xs-6">
+                    <h1 class="page-title col-sm-8">Báo Cáo Chung</h1>
+                </div>
+                
+                <div class="col-lg-3 col-sm-3 col-xs-6 mt15">
+                    <div class="form-group">
+                        <div class="input-group date form_date">
+                            <input type="text" class="form-control" />
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar zmdi zmdi-calendar zmdi-hc-2x mr15 blue-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-4"> 
+                    <div href="#" class="panel status">
+                        <div class="panel-header ">DOANH THU TRONG NGÀY</div>
+                        <div class="panel-body">
+                            <div class="row text-center">
+                                <span class="num-status">26,643,000</span><span class="unit-status">VNĐ</span> 
+                            </div>     
+                            <div class="row panel-detail">
+                                <div class="col-sm-4">Tiền mặt</div>
+                                <div class="col-sm-8 text-right">9,115,000 (VNĐ)</div>
+                            </div>
+                            <div class="row panel-detail">
+                                <div class="col-sm-4">Thẻ</div>
+                                <div class="col-sm-8 text-right">19,115,000 (VNĐ)</div>
+                            </div>
+                            <div class="row panel-detail no-line">
+                                <div class="col-sm-4">ZaloPay</div>
+                                <div class="col-sm-8 text-right">0 (VNĐ)</div>
+                            </div>
+                            <div class="row text-center mt15">
+                                <a href="statistic-by_day.html">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4"> 
+                    <div href="#" class="panel status">
+                        <div class="panel-header ">DOANH SỐ</div>
+                        <div class="panel-body">
+                            <div class="text-center">
+                                <span class="num-status">26,643,000</span><span class="unit-status">VNĐ</span> 
+                            </div>  
+                            <div class="row panel-detail">
+                                <div class="col-sm-4">Khuyến mãi</div>
+                                <div class="col-sm-8 text-right">0 (VNĐ)</div>
+                            </div>
+                            <div class="row panel-detail">
+                                <div class="col-sm-4">Doanh thu</div>
+                                <div class="col-sm-8 text-right">0 (VNĐ)</div>
+                            </div>
+                            <div class="row panel-detail no-line">
+                                <div class="col-sm-4">&nbsp;</div>
+                                <div class="col-sm-8 text-right">&nbsp;</div>
+                            </div>
+                            <div class="row text-center mt15">
+                                <a>Xem thêm</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4"> 
+                    <div href="#" class="panel status">
+                        <div class="panel-header ">HÓA ĐƠN</div>
+                        <div class="panel-body">
+                            <div class="text-center">
+                                <span class="num-status">26,643,000</span><span class="unit-status">VNĐ</span> 
+                            </div>  
+                            <div class="row panel-detail">
+                                <div class="col-sm-4">Tiền mặt</div>
+                                <div class="col-sm-8 text-right">16</div>
+                            </div>
+                            <div class="row panel-detail">
+                                <div class="col-sm-4">Thẻ</div>
+                                <div class="col-sm-8 text-right">15</div>
+                            </div>
+                            <div class="row panel-detail no-line">
+                                <div class="col-sm-4">ZaloPay</div>
+                                <div class="col-sm-8 text-right">0 (VNĐ)</div>
+                            </div>
+                            <div class="row text-center mt15">
+                                <a>Xem thêm</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel mb-3">
+                        <div class="panel-header">THỐNG KÊ THEO NGÀY</div>
+                        <div class="panel-body mb20"> 
+                            <div id="chartContainer" class="chart"></div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel mb-3">
+                        <div class="panel-header">THỐNG KÊ THEO THÁNG</div>
+                        <div class="panel-body mb20"> 
+                            <div id="chartContainer2" class="chart"></div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper --> 
+</div>
+
+<!-- /#wrapper -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/assets/bootstrap-datetimepicker.js"></script>
+<script src="js/assets/bootstrap-datetimepicker.min.js"></script>
+<script src="js/assets/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="js/assets/jquery.canvasjs.min.js"></script>
+<script src="js/assets/highcharts.js"></script>
+<script src="js/assets/exporting.js"></script>
+
+
+
+<script src="js/simple-sidebar.js"></script> 
+<script src="js/default.js"></script> 
+<script src="js/chart.js"></script> 
+<script src="js/datetime.js"></script>
+</body>
+</html>

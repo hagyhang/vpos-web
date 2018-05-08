@@ -575,7 +575,8 @@ form.dark-theme input::placeholder {
       color: #0086F3; }
   .sidebar-nav li.logo a {
     padding: 15px 20px;
-    background-color: transparent !important; }
+    background-color: transparent !important;
+    text-align: center; }
   .sidebar-nav li.parent {
     position: relative; }
     .sidebar-nav li.parent a:after {
@@ -587,7 +588,7 @@ form.dark-theme input::placeholder {
       right: 15px; }
   .sidebar-nav .sub-nav li a {
     padding: 10px 20px;
-    padding-left: 60px;
+    padding-left: 40px;
     font-size: 80%; }
     .sidebar-nav .sub-nav li a i.zmdi {
       margin-right: 5px;
@@ -659,6 +660,12 @@ form.dark-theme input::placeholder {
 
 .form-control {
   height: 36px; }
+
+.form-control.input-lg {
+  height: 46px; }
+
+textarea.form-control.input-lg {
+  height: auto; }
 
 .num-status {
   font-size: 48px;
@@ -749,13 +756,9 @@ form.dark-theme input::placeholder {
 .place_holder {
   color: gray; }
 
-.promotion_dateimtepicker {
+.datetimepicker_icon {
   color: #000000;
-  font-size: 18px;
-  color: #000000; }
-
-.mt27 {
-  margin-top: 27px; }
+  font-size: 18px; }
 
 .x-btn, a.x-btn {
   padding: 5px 0px 0px 0px;
