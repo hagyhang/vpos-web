@@ -57,7 +57,7 @@ body {
 
 #page-content-wrapper {
     width: 100%;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 #wrapper.toggled #page-content-wrapper {
